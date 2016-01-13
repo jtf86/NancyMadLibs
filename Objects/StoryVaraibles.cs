@@ -1,4 +1,4 @@
-namespace nancytest.Objects
+namespace csharp.Objects
 {
   public class StoryVariables
   {

@@ -1,5 +1,6 @@
 using Nancy;
-using nancytest.Objects;
+using csharp.Objects;
+using Nancy.ViewEngines.Razor;
 
 namespace MadLibs
 {
@@ -18,7 +19,7 @@ namespace MadLibs
           Verb = Request.Query["verb"],
           Noun = Request.Query["noun"]
         };
-        return View["story.html", myStoryVariables];
+        return View["story.cshtml", myStoryVariables];
       };
     }
   }
